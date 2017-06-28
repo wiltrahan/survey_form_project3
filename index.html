@@ -10,25 +10,26 @@
     <h1 class="text-center">Survey Time!</h1>
     <p class="text-center">Lets find some things out</p>
 
-    <form class="container">
+    <form class="container" id="myForm">
       <div class="form-group">
         <label for="name">Name*</label>
-        <input class="form-control" type="text" placeholder="Full Name">
+        <input class="form-control" type="text" placeholder="Full Name" required>
       </div>
       <div class="form-group">
         <label for="email">Email*</label>
-        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Email">
+        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Email" required>
       </div>
       <div class="form-check">
-        <label for="education">What was the highest level of education you have completed?</label> <br>
-        <input type="radio" name="education" value="college"> College Graduate <br>
-        <input type="radio" name="education" value="some-college"> Some College <br>
-        <input type="radio" name="education" value="high-school"> High School Diploma <br>
-        <input type="radio" name="education" value="GED"> GED or Equivalent <br>
-        <input type="radio" name="education" value="no-high-school"> Did Not Finish High School <br> <br>
+        <label for="education">What was the highest level of education you have completed?*</label> <br>
+        <input type="radio" name="education" value="college" required="required"> College Graduate <br>
+        <input type="radio" name="education" value="some-college" required="required"> Some College <br>
+        <input type="radio" name="education" value="high-school" required="required"> High School Diploma <br>
+        <input type="radio" name="education" value="GED" required="required"> GED or Equivalent <br>
+        <input type="radio" name="education" value="no-high-school" required="required"> Did Not Finish High School <br> <br>
       </div>
+
       <div class="form-check">
-        <label for="party">Which politial party do you most align with?</label> <br>
+        <label for="party">Which political party do you most align with?</label> <br>
         <input type="checkbox" name="party" value="democratic"> Democratic <br>
         <input type="checkbox" name="party" value="republican"> Republican <br>
         <input type="checkbox" name="party" value="liberterian"> Liberterian <br>
@@ -43,17 +44,22 @@
       </div>
 
       <div class="form-group">
-      <label for="term">Do you think President Trump will complete his term in office?</label><br>
-      <select>
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-        <option value="maybe">Maybe</option>
-        <option value="eight">Eight years or bust!</option>
-      </select>
-
+        <label for="term">Do you think President Trump will complete his term in office?</label><br>
+        <select>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+          <option value="maybe">Maybe</option>
+          <option value="eight">Eight years or bust!</option>
+        </select> <br><br>
       </div>
-
-
+      <div class="form-group">
+        <label for="better">In your own words, how could President Trump improve as President of the United States.</label><br>
+        <textarea rows="4" cols="82">
+        </textarea>
+      </div>
+      <div class="form-group">
+        <button id="submit" type="submit">Submit</button>
+      </div>
 
     </form>
 
@@ -67,5 +73,6 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

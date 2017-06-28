@@ -13,68 +13,48 @@
     <form class="container">
       <div class="form-group">
         <label for="name">Name*</label>
-        <input class="form-control" type="text">
-      </div>
-
-
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      </div>
-
-      <div class="form-group">
-        <label for="exampleSelect1">Example select</label>
-        <select class="form-control" id="exampleSelect1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+        <input class="form-control" type="text" placeholder="Full Name">
       </div>
       <div class="form-group">
-        <label for="exampleSelect2">Example multiple select</label>
-        <select multiple class="form-control" id="exampleSelect2">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
+        <label for="email">Email*</label>
+        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter Email">
       </div>
-      <div class="form-group">
-        <label for="exampleTextarea">Example textarea</label>
-        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-      </div>
-
-      <fieldset class="form-group">
-        <legend>Radio buttons</legend>
-        <div class="form-check">
-          <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-            Option one is this and that&mdash;be sure to include why it's great
-          </label>
-        </div>
-        <div class="form-check">
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-            Option two can be something else and selecting it will deselect option one
-          </label>
-        </div>
-        <div class="form-check disabled">
-        <label class="form-check-label">
-            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-            Option three is disabled
-          </label>
-        </div>
-      </fieldset>
       <div class="form-check">
-        <label class="form-check-label">
-          <input type="checkbox" class="form-check-input">
-          Check me out
-        </label>
+        <label for="education">What was the highest level of education you have completed?</label> <br>
+        <input type="radio" name="education" value="college"> College Graduate <br>
+        <input type="radio" name="education" value="some-college"> Some College <br>
+        <input type="radio" name="education" value="high-school"> High School Diploma <br>
+        <input type="radio" name="education" value="GED"> GED or Equivalent <br>
+        <input type="radio" name="education" value="no-high-school"> Did Not Finish High School <br> <br>
       </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <div class="form-check">
+        <label for="party">Which politial party do you most align with?</label> <br>
+        <input type="checkbox" name="party" value="democratic"> Democratic <br>
+        <input type="checkbox" name="party" value="republican"> Republican <br>
+        <input type="checkbox" name="party" value="liberterian"> Liberterian <br>
+        <input type="checkbox" name="party" value="green"> Green <br>
+        <input type="checkbox" name="party" value="other"> Other <br>
+        <input type="checkbox" name="party" value="none"> None <br> <br>
+      </div>
+
+      <div class="form-group">
+        <label for="rating">On a scale of 1-10, how would you rate President Trump's first six months in office?</label><br>
+        <input type="number" name="quantity" min="1" max="10" placeholder="1">
+      </div>
+
+      <div class="form-group">
+      <label for="term">Do you think President Trump will complete his term in office?</label><br>
+      <select>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="maybe">Maybe</option>
+        <option value="eight">Eight years or bust!</option>
+      </select>
+
+      </div>
+
+
+
     </form>
 
 
